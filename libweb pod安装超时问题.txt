@@ -1,0 +1,6 @@
+1.command + shift + G 前往文件路径 ~/.cocoapods/repos/master/Specs/1/9/2/libwebp/1.0.2
+
+2. 打开对应版本号 json文件,修改路径：将https://chromium.googlesource.com/webm/libwebp
+替换为 https://github.com/webmproject/libwebp.git
+
+3.保存,重新 pod install 即可解决!
