@@ -1,0 +1,17 @@
+由于CoCoaPods服务器在国外，速度比较慢，所以使用淘宝的镜像，内容是一样的
+
+1.终端中添加淘宝源地址
+
+sudo gem sources - a https : //ruby.taobao.org/
+
+2.删除国外地址
+
+sudo gem sources - r https : //rubygems.org/
+
+3.安装CoCoaPods，安装过程需要一段时间，请等待，出现gem installed就成功了
+
+sudo gem install cocoapods
+
+4.启动CoCoaPods
+
+pod setup

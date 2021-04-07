@@ -1,0 +1,30 @@
+windows: 
+在环境变量的用户变量中加入以下配置：
+新建变量：PUB_HOSTED_URL，值为： https://pub.flutter-io.cn    
+新建变量：FLUTTER_STORAGE_BASE_URL，值为：https://storage.flutter-io.cn
+在Path变量中新建：你的flutter安装目录\bin
+
+
+mac: 
+1.打开命令终端，直接在home目录下，输入命令：
+
+open -e .bash_profile
+
+会打开.bash_profile文件，如果没有这个文件，你需要先用命令 touch .bash_profile 创建。
+
+打开之后，添加如下配置：
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PATH=你的flutter安装目录/bin:$PAT
+
+添加完之后command+s保存
+
+2.更新配置的环境变量，命令：
+
+source ~/.bash_profile
+
+配置环境变量结束，现在就可以使用flutter命令了。
+
+mac使用zsh终端环境变量配置无效的解决方案：
+1. 修改zsh的配置文件，让其在每次启动的时候来读取~/.bash_profile里面的配置。vim ~/.zshrc 在文件的最后面加上source ~/.bash_profile
+2. source ~/.zshrc 使其立即生效
